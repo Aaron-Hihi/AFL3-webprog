@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="Style.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="Script.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+</head>
+<body>
+    <!-- NAV -->
+    <nav class="fixed top-0 left-0 z-50 flex items-center justify-between
+    w-full h-16 bg-[#E73879] px-12">
+        <a href="Home.html" id="logo">Hans Diaries</a>
+
+        <!-- Desktop -->
+        <div class="hidden lg:flex gap-8">
+            <a href="Home.html">Home</a>
+            <a href="Hobby.html">Hobby</a>
+            <a href="Gallery.html">Gallery</a>
+        </div>
+
+        <!-- Hamburger -->
+        <button class="hamburger-nav
+        lg:hidden flex flex-col items-center justify-center
+        h-16 w-16">
+            <div class="hamburger-bar w-8 h-1 bg-white rounded-lg my-[0.2rem]"></div>
+            <div class="hamburger-bar w-8 h-1 bg-white rounded-lg my-[0.2rem]"></div>
+            <div class="hamburger-bar w-8 h-1 bg-white rounded-lg my-[0.2rem]"></div>
+        </button>
+    </nav>
+
+    <!-- Dropdown -->
+    <div id="nav-links"
+    class="m-fade-scroll
+    lg:hidden flex flex-col fixed z-50
+    bg-pink-theme w-full mt-16 gap-5 px-12 py-4
+    transition-all duration-500 ease-in-out transform scale-y-0 origin-top">
+        <a href="Home.html">Home</a>
+        <a href="Hobby.html">Hobby</a>
+        <a href="Gallery.html">Gallery</a>
+    </div>
+
+
+    <div class="wrapper">
+        <!-- Content -->
+        <section class="m-fade-scroll !mt-0
+        flex flex-col-reverse xl:flex-row content-max-width !items-stretch">
+            <div class="flex-2 flex flex-col gap-5 w-full">
+                <h3>Dumbbell Lateral Raise is Awesome</h3>
+                <div class="flex justify-between w-full">
+                    <p>March 8th, 2025</p>
+                    <p>Lifestyle, Education</p>
+                </div>
+                <p>The lateral raise is often overlooked, but it's one of the best exercises for building shoulder strength. By isolating the deltoid muscles, it enhances upper body stability and posture. The reason why it's so effective is because it targets the often-neglected middle portion of the delts.  The middle delt is responsible for shoulder abduction, which is lifting the arm laterally away from the body. This muscle also contributes to defined shoulders and upper arms that have a rounded appearance.</p>
+
+                <img src="Images/cards/lateral raise.webp">
+                <p class="text-center">Dumbell Lateral Raise. Source: repfitness.com</p>
+
+                <h4>How to Do Dumbbell Lateral Raise</h4>
+                <p>However, performing dumbbell lateral raise might be tricky because there are so many mistakes that might slow your gain or cause injury. So, learning proper form is crucial in order to avoid this. This is how to do dumbbell lateral raise properly.</p>
+                <ol>
+                    <li>Begin by standing with your feet hip-width apart, holding a dumbbell in each hand. Let your arms hang naturally by your sides with a slight bend in your elbows, palms facing your body. Maintain a neutral spine with your chest lifted and core engaged to support your lower back.</li>
+                    <li>Before raising your arms, breathe in to create intra-abdominal pressure for your spine and torso.</li>
+                    <li>Slowly raise your arms out to the sides slightly below shoulder height, keeping your elbows slightly bent throughout the movement. Exhale while raising your arms. Focus on leading with your elbows instead of your hands or wrists to target the lateral deltoid more effectively.</li>
+                    <li>Once your arms reach shoulder height, pause for a moment and squeeze your shoulders to maximize the muscle contraction.</li>
+                    <li>Slowly lower the dumbbells back down to the starting position, resisting gravity to maintain tension in the muscles. Inhale as you lower the dumbbells back to the starting position in a controlled manner.</li>
+                </ol>
+
+                <h4>Common Mistakes While Doing Dumbbell Lateral Raise</h4>
+                <p>Here are some common mistakes that people do that might cause injury or slow your gain.</p>
+                <ol>
+                    <li><b>Lifting too heavy</b>, as they can compromise your form and lead to injuries. Beginners that lift too heavy tend to compensate the movement with traps or lats. This can cause shoulder impingement or neck pain, causing your humerus (upper arm bone) to move improperly within the shoulder joint. Start with really light weights and gradually increase resistance as your strength improves.</li>
+                    <li><b>Swinging</b>, by using momentum to lift the weights instead of controlling them. Swinging or jerking the weights can strain your joints and lead to improper muscle engagement.</li>
+                    <li><b>Using incorrect arm angles</b>, as raising your arms too high or too low, the exercise might not effectively target the lateral deltoids. Keep in mind that raising your arms too high may cause unnecessary strain on your shoulder joints. Stick to shoulder height or slightly lower for optimal results and safety. Aim to keep your arms parallel to the ground at shoulder height to maximize the benefit.</li>
+                    <li><b>Shrugging your shoulders</b> toward your ears. Keep your traps relaxed to ensure you're isolating the deltoids, not overworking your upper traps.</li>
+                    <li><b>Bad posture</b>, such as not engaging your core and arching your back during the movement. Keep your chest open and your shoulders back to prevent injury.</li>
+                </ol>
+                
+                <h4>Variations and Modifiactions</h4>
+                <p>To maximize muscle engagement and avoid plateaus, it's essential to explore variations of this exercise that target different aspects of the shoulder and add variety to your workout routine. By adjusting your form, range of motion, or resistance type, you can shift the focus to different parts of the deltoid, such as the anterior, lateral, or posterior heads.</p>
+                <ol>
+                    <li><b>Seated Dumbbell Lateral Raise</b> Sitting on a bench helps eliminate the use of momentum from your lower body, making it easier to focus on shoulder activation.</li>
+                    <li><b>Single-Arm Dumbbell Lateral Raise</b>: Performing the lateral raise one arm at a time allows you to concentrate on each shoulder individually and can also help correct muscle imbalances.</li>
+                    <li><b>Cable Lateral Raise</b>: Using a cable machine instead of dumbbells provides continuous tension throughout the movement and can further challenge the muscles.</li>
+                </ol>
+                
+            </div>
+
+            <!-- SEARCH AND TAGS -->
+            <div class="m-fade-scroll hidden xl:flex flex-1 flex-col xl:self-start 
+            gap-14 h-fit xl:mt-14">
+                <div class="hidden xl:flex flex-col justify-center items-center
+                    m_interactive m_hoverable gap-5 !px-0 !pt-5 !pb-14 rounded-[50px]">
+                        <h4>Popular Blogs</h4>
+                        <ol class="bg-orange-theme !list-decimal w-full pl-6">
+
+                            <li class="relative
+                                after:content-[''] after:absolute after:top-0 after:left-[-1.5rem] after:h-[1px] after:w-[calc(100%+1.5rem)]
+                                after:bg-gradient-to-r after:from-[#FFE8AB] after:to-[#E73879]"
+                                ><a class="py-5 pl-2 block h-full w-full"
+                                    href="">Delightful Dinner Date with Creamy Alfredo</a></li>
+                            <li class="relative
+                                after:content-[''] after:absolute after:top-0 after:left-[-1.5rem] after:h-[1px] after:w-[calc(100%+1.5rem)]
+                                after:bg-gradient-to-r after:from-[#FFE8AB] after:to-[#E73879]"
+                                ><a class="py-5 pl-2 block h-full w-full"
+                                    href="">Actually Getting Faster in Minesweeper</a></li>
+                            <li class="relative
+                                after:content-[''] after:absolute after:top-0 after:left-[-1.5rem] after:h-[1px] after:w-[calc(100%+1.5rem)]
+                                after:bg-gradient-to-r after:from-[#FFE8AB] after:to-[#E73879]"
+                                ><a class="py-5 pl-2 block h-full w-full"
+                                    href="">Why Brainrot Works</a></li>
+                            <li class="relative
+                                after:content-[''] after:absolute after:top-0 after:left-[-1.5rem] after:h-[1px] after:w-[calc(100%+1.5rem)]
+                                after:bg-gradient-to-r after:from-[#FFE8AB] after:to-[#E73879]"
+                                ><a class="py-5 pl-2 block h-full w-full"
+                                    href="">A Little Introduction to FL Studio and My Workflow</a></li>
+                            <li class="relative
+                                after:content-[''] after:absolute after:top-0 after:left-[-1.5rem] after:h-[1px] after:w-[calc(100%+1.5rem)]
+                                after:bg-gradient-to-r after:from-[#FFE8AB] after:to-[#E73879]"
+                                ><a class="py-5 pl-2 block h-full w-full"
+                                    href="">An Analysis of “Mesmerizer” by 32ki</a></li>
+                        </ol>
+                    </div>
+            
+                <div id="searchAndTags" class="sticky flex flex-col gap-5">
+                    <div class="flex flex-col items-center gap-5">
+                        <h4>Search Blogs</h4>
+                        <div class="w-full relative">
+                            <input type="text" placeholder="Search here..." class="m_interactive
+                                py-[0.4rem] px-[0.6rem] w-full">
+                            <a href="Hobby.html"><span class="material-symbols-outlined
+                                text-white hover:text-[#FFE8AB] transition-all duration-300
+                                absolute translate-y-1/4 md:translate-y-1/3 right-6 translate-x-1/2">search</span></a>
+                        </div>
+                    </div>
+                        
+                    <div class="flex flex-wrap justify-center items-center gap-5">
+                        <button class="m_interactive m_button">All</button>
+                        <button class="m_interactive m_button">Hobby</button>
+                        <button class="m_interactive m_button">Lifestyle</button>
+                        <button class="m_interactive m_button">Education</button>
+                        <button class="m_interactive m_button">Technology</button>
+                        <button class="m_interactive m_button">Entertainment</button>
+                        <button class="m_interactive m_hoverable m_button">Other</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <div class="content-max-width flex flex-col w-full gap-10 pb-[10rem]">
+  
+            <!-- Related Post -->
+            <div>
+                <h3>Related Post</h3>
+                <div class="flex flex-row gap-5">
+                <a href="Article.html">
+                    <div class="m-fade-scroll m_card">
+                    <img class="aspect-video object-cover" src="Images/cards/video editing.webp" alt="Lateral Raise">
+                    <div class="flex justify-between">
+                        <p class="!text-sm">January 4th, 2025</p>
+                        <p class="!text-sm text-right line-clamp-2">Technology, Education</p>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <h3 class="text-center line-clamp-3">10 Hacks to Create Better Videos</h3>
+                        <p class="line-clamp-5">Creating engaging videos doesn't require a massive budget or advanced equipment - sometimes, it's the small adjustments that make the biggest difference...</p>
+                    </div>
+                    </div>
+                </a>
+                <a href="Article.html">
+                    <div class="m-fade-scroll m_card">
+                    <img class="aspect-video object-cover" src="Images/cards/video editing.webp" alt="Lateral Raise">
+                    <div class="flex justify-between">
+                        <p class="!text-sm">January 4th, 2025</p>
+                        <p class="!text-sm text-right line-clamp-2">Technology, Education</p>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <h3 class="text-center line-clamp-3">10 Hacks to Create Better Videos</h3>
+                        <p class="line-clamp-5">Creating engaging videos doesn't require a massive budget or advanced equipment - sometimes, it's the small adjustments that make the biggest difference...</p>
+                    </div>
+                    </div>
+                </a>
+                </div>
+            </div>
+
+            <!-- Explore More -->
+            <div>
+                <h3>Explore More</h3>
+                <div class="flex flex-row gap-5">
+                <a href="Article.html">
+                    <div class="m-fade-scroll m_card">
+                    <img class="aspect-video object-cover" src="Images/cards/video editing.webp" alt="Lateral Raise">
+                    <div class="flex justify-between">
+                        <p class="!text-sm">January 4th, 2025</p>
+                        <p class="!text-sm text-right line-clamp-2">Technology, Education</p>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <h3 class="text-center line-clamp-3">10 Hacks to Create Better Videos</h3>
+                        <p class="line-clamp-5">Creating engaging videos doesn't require a massive budget or advanced equipment - sometimes, it's the small adjustments that make the biggest difference...</p>
+                    </div>
+                    </div>
+                </a>
+                <a href="Article.html">
+                    <div class="m-fade-scroll m_card">
+                    <img class="aspect-video object-cover" src="Images/cards/video editing.webp" alt="Lateral Raise">
+                    <div class="flex justify-between">
+                        <p class="!text-sm">January 4th, 2025</p>
+                        <p class="!text-sm text-right line-clamp-2">Technology, Education</p>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <h3 class="text-center line-clamp-3">10 Hacks to Create Better Videos</h3>
+                        <p class="line-clamp-5">Creating engaging videos doesn't require a massive budget or advanced equipment - sometimes, it's the small adjustments that make the biggest difference...</p>
+                    </div>
+                    </div>
+                </a>
+                </div>
+            </div>
+        
+        </div>
+
+
+
+
+
+
+
+        <!-- FOOTER -->
+        <footer class="bg-pink-theme flex-col !py-[4rem]">
+            <div id="footerContent" class="content-max-width flex-col md:flex-row
+                w-fit md:w-full gap-16 md:gap-10 !ml-0 md:!ml-auto">
+                <div id="footerNav" class="flex flex-1 flex-col items-stretch gap-[1.25rem] w-full">
+                    <h4 class="mb-[2.5rem]">Navigate</h4>
+                    <a class="h-full" href="Hobby.html">Hobby</a>
+                    <a class="h-full" href="Gallery.html">Gallery</a>
+                    <a class="h-full" href="#">FAQ</a>
+                    <a class="h-full" href="#">Contact Me</a>
+                </div>
+
+                <div id="footerSocial" class="flex flex-1 flex-col items-stretch
+                w-fit md:w-full gap-[1.25rem]">
+                    <h4 class="mb-[2.5rem]">Social Media</h4>
+                    <a class="flex items-center gap-2 h-full m-[3px] text-white" 
+                    href="https://www.instagram.com/aaron.berkelas/" rel="external" target="_blank">
+                    <svg class="w-8 h-8 fill-current" viewBox="0 0 512 512" 
+                        aria-hidden="true" focusable="false">
+                        <title>Instagram icon</title>
+                        <path d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z"></path>
+                        <path d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z"></path>
+                        <circle cx="351.5" cy="160.5" r="21.5"></circle>
+                    </svg>
+                    <p>@aaron.berkelas</p></a>
+
+                    <a class="flex items-center gap-2 h-full m-[3px] text-white" 
+                    href="#" rel="external" target="_blank">  
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 512 512" 
+                            aria-hidden="true" focusable="false">
+                            <title>Facebook icon</title>
+                            <path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"/>
+                        </svg>
+                        <p class="text-sm">Aaron Hans</p>
+                    </a>
+
+                    <a class="flex items-center gap-2 h-full m-[3px] text-white" 
+                    href="mailto:aadiputra@student.ciputra.ac.id" rel="external" target="_blank">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                            <title>Email icon</title>
+                            <path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"></path>
+                        </svg>
+                        <p>aadiputra@student.ciputra.ac.id</p>
+                    </a>
+
+                    <a class="flex items-center gap-2 h-full m-[3px] text-white" href="#" rel="external" target="_blank">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                            <title>Github icon</title>
+                            <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"></path>
+                        </svg>
+                        <p>Aaron-Hihi</p>
+                    </a>
+                </div>
+            </div>
+            <p>© 2025 Aaron Hans Adiputra. All right reserved.</p>
+        </footer>
+</body>
+</html>
